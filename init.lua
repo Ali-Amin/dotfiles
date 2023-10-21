@@ -1,5 +1,6 @@
 vim.opt.termguicolors = true
 vim.wo.relativenumber = true
+vim.api.nvim_set_option("clipboard","unnamed")
 
 require('plugins')
 require('mason-config')

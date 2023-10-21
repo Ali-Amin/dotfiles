@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install deps
-apt-get install zsh git tmux gcc
+apt-get install zsh git tmux gcc ripgrep
 git clone https://github.com/go-delve/delve
 cd delve
 go install github.com/go-delve/delve/cmd/dlv
