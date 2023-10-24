@@ -2,9 +2,8 @@
 
 # Install deps
 apt-get install zsh git tmux gcc ripgrep
-git clone https://github.com/go-delve/delve
-#cd delve
-#go install github.com/go-delve/delve/cmd/dlv
+git config --global core.editor "nvim"
+
 echo 'export PATH="~/go/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
@@ -24,6 +23,5 @@ cp .tmux.conf ~/.tmux.conf
 # Install NVIM packages
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-mkdir -p ~/.config/nvim/lua
 
 
