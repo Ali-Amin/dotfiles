@@ -13,7 +13,7 @@ cmp.setup({
 	},
 
 	mapping = {
-		['<C-S>'] = cmp.mapping.complete(),
+		['<C-Space>'] = cmp.mapping.complete(),
 		['<C-e>'] = cmp.mapping.close(),
 		['<C-Down>'] = cmp.mapping.select_next_item(),
 		['<C-Up>'] = cmp.mapping.select_prev_item(),

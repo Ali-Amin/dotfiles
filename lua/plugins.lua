@@ -58,4 +58,9 @@ return require('packer').startup(function(use)
 	}
 
 	use { 'jose-elias-alvarez/null-ls.nvim' }
+
+	use {
+		"nvim-treesitter/nvim-treesitter-context",
+		config = function() require("treesitter-context").setup{ max_lines = 1 } end 
+	}
 end)

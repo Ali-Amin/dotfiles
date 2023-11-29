@@ -4,7 +4,7 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.gofumpt,
 		null_ls.builtins.formatting.goimports,
-		null_ls.builtins.formatting.golines,
+	--	null_ls.builtins.formatting.golines,
 	},
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
