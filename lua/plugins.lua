@@ -63,4 +63,14 @@ return require('packer').startup(function(use)
 		"nvim-treesitter/nvim-treesitter-context",
 		config = function() require("treesitter-context").setup{ max_lines = 1 } end 
 	}
+
+	use { "towolf/vim-helm" }
+
+	use "nvim-lua/plenary.nvim" 
+
+	use {
+	    "ThePrimeagen/harpoon",
+	    branch = "harpoon2",
+	    requires = { {"nvim-lua/plenary.nvim"} }
+	}
 end)

@@ -107,3 +107,10 @@ export PATH=$PATH:/$M2_HOME/bin
 export PATH=$PATH:/root/.local/bin
 
 export PATH=/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/RSA SecurID Token Common:/mnt/c/Program Files/RSA SecurID Token Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Ali_Amin1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ali_Amin1/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/usr/local/go/bin
+
+# bun completions
+[ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -1,7 +1,6 @@
 vim.opt.termguicolors = true
 vim.wo.relativenumber = true
 vim.wo.number = true
-vim.api.nvim_set_option("clipboard","unnamed")
 
 
 require('plugins')
@@ -16,3 +15,4 @@ require('statusline')
 require('mappings')
 require('formatting')
 require('context-config')
+require('harpoon-config')
