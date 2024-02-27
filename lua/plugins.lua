@@ -23,8 +23,7 @@ return require('packer').startup(function(use)
 	}
 
 	-- Styling
-	use 'Mofiqul/dracula.nvim'
-
+	use {"catppuccin/nvim", as = "catpuccin"}
 	-- Code Highlighting
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -72,5 +71,17 @@ return require('packer').startup(function(use)
 	    "ThePrimeagen/harpoon",
 	    branch = "harpoon2",
 	    requires = { {"nvim-lua/plenary.nvim"} }
+	}
+
+	use {
+		"m4xshen/hardtime.nvim",
+		requires = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim" },
+		config = function() require("hardtime").setup {} end
+
+	}
+
+	use {
+		'christoomey/vim-tmux-navigator',
+		config = function() require("tmux-config") end
 	}
 end)

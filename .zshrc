@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="tonotdo"
-
+export COLORTERM=truecolor
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
 export PATH="/root/nvim-linux64/bin:$PATH"
 export PATH="/root/go/bin:/usr/local/go/bin:$PATH"
 export JAVA_HOME='/opt/jdk-13.0.1'
@@ -106,7 +109,7 @@ export PATH=$PATH:/$JAVA_HOME/bin
 export PATH=$PATH:/$M2_HOME/bin
 export PATH=$PATH:/root/.local/bin
 
-export PATH=/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/RSA SecurID Token Common:/mnt/c/Program Files/RSA SecurID Token Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Ali_Amin1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ali_Amin1/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/usr/local/go/bin
+export PATH="/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-linux64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/RSA SecurID Token Common:/mnt/c/Program Files/RSA SecurID Token Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Ali_Amin1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Ali_Amin1/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/usr/local/go/bin"
 
 # bun completions
 [ -s "/root/.bun/_bun" ] && source "/root/.bun/_bun"
@@ -114,3 +117,12 @@ export PATH=/root/go/bin:/usr/local/go/bin:/root/nvim-linux64/bin:/root/nvim-lin
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export KUBE_EDITOR="nvim"
+
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH="/opt/apache-maven-3.6.3/bin:$PATH"

@@ -2,7 +2,6 @@ vim.opt.termguicolors = true
 vim.wo.relativenumber = true
 vim.wo.number = true
 
-
 require('plugins')
 require('mason-config')
 require('gopls')
@@ -16,3 +15,5 @@ require('mappings')
 require('formatting')
 require('context-config')
 require('harpoon-config')
+require('tmux-config')
+require('jdtls')
