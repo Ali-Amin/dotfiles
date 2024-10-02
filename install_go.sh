@@ -1,4 +1,4 @@
-curl -L https://go.dev/dl/go1.21.3.linux-amd64.tar.gz --object go.tar.gz
+curl -L https://go.dev/dl/go1.21.3.linux-amd64.tar.gz -o go.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go.tar.gz
 rm -rf go.tar.gz
 
