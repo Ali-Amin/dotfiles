@@ -1,6 +1,7 @@
 return require('packer').startup(function(use)
 
 	use 'wbthomason/packer.nvim'
+	use "nvim-lua/plenary.nvim" 
 	use 'williamboman/mason.nvim'
 	use 'williamboman/mason-lspconfig.nvim'
 	use 'neovim/nvim-lspconfig'
@@ -14,6 +15,7 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/cmp-buffer'
 
 	-- DAP
+	use 'mfussenegger/nvim-dap-python'
 	use 'mfussenegger/nvim-dap'
 	use 'nvim-neotest/nvim-nio'
 	use { 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap','nvim-neotest/nvim-nio'} }
@@ -57,7 +59,7 @@ return require('packer').startup(function(use)
 		config = function() require("nvim-autopairs").setup {} end
 	}
 
-	use { 'jose-elias-alvarez/null-ls.nvim' }
+	use { 'nvimtools/none-ls.nvim' }
 
 	use {
 		"nvim-treesitter/nvim-treesitter-context",
@@ -66,7 +68,6 @@ return require('packer').startup(function(use)
 
 	use { "towolf/vim-helm" }
 
-	use "nvim-lua/plenary.nvim" 
 
 	use {
 	    "ThePrimeagen/harpoon",
@@ -78,4 +79,6 @@ return require('packer').startup(function(use)
 		'christoomey/vim-tmux-navigator',
 		config = function() require("tmux-config") end
 	}
+
+	use 'MunifTanjim/prettier.nvim'
 end)

@@ -98,8 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
-alias vi="nvim"
+alias nvim="~/nvim-linux-x86_64.appimage"
+alias vim="~/nvim-linux-x86_64.appimage"
+alias vi="~/nvim-linux-x86_64.appimage"
 alias oldvim="vim"
 export PATH="/root/nvim-linux64/bin:$PATH"
 export PATH="/root/go/bin:/usr/local/go/bin:$PATH"
@@ -127,3 +128,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH="/opt/apache-maven-3.6.3/bin:$PATH"
 
+
+# fnm
+FNM_PATH="/root/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/root/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+alias python=python3

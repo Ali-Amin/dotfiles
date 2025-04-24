@@ -15,6 +15,8 @@ dap.listeners.before.event_exited["dapui_config"] = function()
 	dapui.close()
 end
 
+require("dap-python").setup("python3")
+
 vim.keymap.set('n', '<Space>d', "<Cmd>DapContinue<CR>")
 vim.keymap.set('n', '<Space>b', "<Cmd>DapToggleBreakpoint<CR>")
 vim.keymap.set('n', '<C-s>', "<Cmd>DapStepOver<CR>")
