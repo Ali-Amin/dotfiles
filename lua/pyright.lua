@@ -4,7 +4,7 @@ util = require "lspconfig/util"
 lspconfig.pyright.setup {
 	cmd = { "pyright-langserver", "--stdio" },
 	filetypes = { "python" },
-	root_markers = { "pyproject.toml", "setup.py", "setup.cfg", ".git" },
+	root_markers = { "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt" },
 	--	root_dir = util.root_pattern(".py"),
 	settings = {
 		python = {
